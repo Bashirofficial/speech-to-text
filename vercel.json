@@ -13,15 +13,5 @@
     "backend/index.js": {
       "runtime": "@vercel/node@3.0.12"
     }
-  },
-  "routes": [
-    {
-      "src": "/uploads/(.*)",
-      "dest": "/backend/uploads/$1"
-    },
-    {
-      "src": "/api/v1/(.*)",
-      "dest": "/backend/index.js"
-    }
-  ]
+  }
 }
