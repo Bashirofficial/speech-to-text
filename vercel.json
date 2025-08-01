@@ -6,7 +6,7 @@
     },
     {
       "source": "/uploads/:path*",
-      "destination": "/backend/uploads/:path*"
+      "destination": "/uploads/:path*"
     }
   ]
 }
