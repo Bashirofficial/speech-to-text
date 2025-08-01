@@ -9,17 +9,11 @@
       "destination": "/backend/uploads/:path*"
     }
   ],
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "frontend/dist" }
-    },
-    {
-      "src": "backend/package.json",
-      "use": "@vercel/node"
+  "functions": {
+    "backend/index.js": {
+      "runtime": "@vercel/node@3.0.12"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/uploads/(.*)",
