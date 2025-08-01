@@ -142,7 +142,7 @@ const useTranscription = () => {
     );
   };
 
-  // --- Download Transcription ---
+  // --- Download Transcription---
   const downloadTranscription = (transcription) => {
     const element = document.createElement("a");
     // Use the actual transcribed_text from the backend data
