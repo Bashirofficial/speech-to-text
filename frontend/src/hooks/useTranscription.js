@@ -3,8 +3,9 @@ import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
 // Use the relative path to leverage Vite's proxy
-const API_BASE_URL = "/api/v1/audio";
 
+const API_BASE_URL =
+  "https://speech-to-text-backend-production-0c8c.up.railway.app/api/v1/audio";
 const useTranscription = () => {
   const [transcriptions, setTranscriptions] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
