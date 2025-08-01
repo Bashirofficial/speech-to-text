@@ -9,7 +9,8 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "http://local:8000",
+        target:
+          "https://speech-to-text-backend-production-0c8c.up.railway.app/",
         changeOrigin: true,
       },
     },
